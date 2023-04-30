@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://host.docker.internal:3306/piooda?serverTimezone=Asia/Seoul
+    username: test
+    password: test_pw
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+    database: mysql
+    # Initial Data config
+    defer-datasource-initialization: true
