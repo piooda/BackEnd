@@ -8,7 +8,7 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create
     properties:
       hibernate:
         format_sql: true
@@ -16,3 +16,4 @@ spring:
     database: mysql
     # Initial Data config
     defer-datasource-initialization: true
+
